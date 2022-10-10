@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.unity.collab-proxy": {
-      "version": "1.17.2",
+      "version": "1.17.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -81,7 +81,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.learn.iet-framework": {
-      "version": "2.2.2",
+      "version": "3.1.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -132,7 +132,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.31",
+      "version": "1.1.33",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -203,7 +203,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "4.2.0",
+      "version": "4.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
