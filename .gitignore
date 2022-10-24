@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/Assets/StreamingAssets/.models/exported-bart-light-gail-chatbot/decoder_bart.onnx
+/Assets/StreamingAssets/.models/exported-bart-light-gail-chatbot/encoder_bart.onnx
+/Assets/StreamingAssets/.models/exported-flowtron-waveglow-librispeech-tts/backward_flow.onnx
+/Assets/StreamingAssets/.models/exported-flowtron-waveglow-librispeech-tts/encoder.onnx
+/Assets/StreamingAssets/.models/exported-flowtron-waveglow-librispeech-tts/forward_flow.onnx
+/Assets/StreamingAssets/.models/exported-flowtron-waveglow-librispeech-tts/vocoder.onnx
+/Assets/StreamingAssets/.models/exported-paraphrase-MiniLM-L6-v2/model.onnx
