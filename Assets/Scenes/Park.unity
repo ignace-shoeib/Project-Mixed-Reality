@@ -44951,19 +44951,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: debugLogs
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
+      propertyPath: serverAddress
+      value: 84.197.151.224:8080
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: serverConsole
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.size
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: connectToExistingServer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[0].path

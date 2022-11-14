@@ -2226,7 +2226,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: debugLogs
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: m_Enabled
@@ -2238,15 +2238,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: serverConsole
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.size
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: connectToExistingServer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[0].path
