@@ -194,10 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "The Brimswood pub is an old establishment. \r\nIt is sturdy, has a lot
-    of life in its walls, but hasn't been updated in decades.\r\nThe clientele are
-    the same as they always are, and they don't see very many strangers. \r\nThe
-    vibe is somber, and conversations are usually had in hushed tones."
+  m_Text: A park with a lot of trees in Belgium.
 --- !u!222 &31524580
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -731,10 +728,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The Brimswood pub is an old establishment.  It is sturdy, has a lot of
-    life in its walls, but hasn't been updated in decades. The clientele are the
-    same as they always are, and they don't see very many strangers.  The vibe is
-    somber, and conversations are usually had in hushed tones.
+  m_Text: A park with a lot of trees in Belgium.
 --- !u!222 &63235778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2231,24 +2225,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
+      propertyPath: debugLogs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
+      propertyPath: serverAddress
+      value: 84.197.151.224:8080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
+      propertyPath: serverConsole
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.size
-      value: 4
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
+      propertyPath: connectToExistingServer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[0].path
-      value: C:/Users/baete/Desktop/Project-Mixed-Reality/Assets/StreamingAssets\.models/exported-bart-light-gail-chatbot
+      value: C:/Users/kenx0/source/repos/Project-Mixed-Reality/Assets/StreamingAssets\.models/exported-bart-light-gail-chatbot
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[1].path
-      value: C:/Users/baete/Desktop/Project-Mixed-Reality/Assets/StreamingAssets\.models/exported-flowtron-waveglow-librispeech-tts
+      value: C:/Users/kenx0/source/repos/Project-Mixed-Reality/Assets/StreamingAssets\.models/exported-flowtron-waveglow-librispeech-tts
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[2].path
-      value: C:/Users/baete/Desktop/Project-Mixed-Reality/Assets/StreamingAssets\.models/exported-paraphrase-MiniLM-L6-v2
+      value: C:/Users/kenx0/source/repos/Project-Mixed-Reality/Assets/StreamingAssets\.models/exported-paraphrase-MiniLM-L6-v2
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[3].name
@@ -2263,12 +2273,16 @@ PrefabInstance:
       value: '"TransformerSemanticSimilarity"'
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
+      propertyPath: services.Array.data[0].start
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[1].start
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1480138458, guid: 649bd79ce63a6e9449715449439999df, type: 3}
       propertyPath: services.Array.data[2].start
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 826819703477927490, guid: 649bd79ce63a6e9449715449439999df,
         type: 3}
@@ -3099,7 +3113,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: pet dog
+  m_Text: Depressed girl
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -4710,9 +4724,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I am mans best friend and I wouldn't have it any other way. I tend to
-    my master and never leave his side. \r\nI sleep at his feet and guard the room
-    at night from things that go bump in the night."
+  m_Text: A depressed girl. Both her parents died in a car acciddent, she doesn't
+    know how to deal with it. She is human and suicidal. She attemted to commit suicide
+    once.
 --- !u!222 &556925401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5858,10 +5872,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: The Brimswood pub is an old establishment.  It is sturdy, has a lot of
-    life in its walls, but hasn't been updated in decades. The clientele are the
-    same as they always are, and they don't see very many strangers.  The vibe is
-    somber, and conversations are usually had in hushed tones.
+  m_Text: A park with a lot of trees in Belgium.
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -6256,7 +6267,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Brimswood pub, Tavern
+  m_Text: A park
 --- !u!222 &803143305
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7716,7 +7727,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: the town baker's husband
+  m_Text: a student
 --- !u!222 &1159568478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7880,7 +7891,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pet dog
+  m_Text: Depressed girl
 --- !u!222 &1214543744
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9169,7 +9180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: pet dog
+  m_Text: Depressed girl
 --- !u!222 &1420917800
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9329,9 +9340,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I am mans best friend and I wouldn't have it any other way. I tend to my
-    master and never leave his side.  I sleep at his feet and guard the room at night
-    from things that go bump in the night.
+  m_Text: A depressed girl. Both her parents died in a car acciddent, she doesn't
+    know how to deal with it. She is human and suicidal. She attemted to commit suicide
+    once.
 --- !u!222 &1445962289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9566,7 +9577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: the town baker's husband
+  m_Text: a student
 --- !u!222 &1459240790
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10532,9 +10543,9 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: I am mans best friend and I wouldn't have it any other way. I tend to my
-    master and never leave his side.  I sleep at his feet and guard the room at night
-    from things that go bump in the night.
+  m_Text: A depressed girl. Both her parents died in a car acciddent, she doesn't
+    know how to deal with it. She is human and suicidal. She attemted to commit suicide
+    once.
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -10954,7 +10965,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Brimswood pub, Tavern
+  m_Text: A park
 --- !u!222 &1712247486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11326,10 +11337,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I am the town baker's husband and I love eating pastries.   I tend to be
-    in very good spirits and enjoy selling delicious baked goods that my wife has
-    made.   My wife is great at baking but she is lousy at washing my clothes.  
-    They keep shrinking!
+  m_Text: A student studying for psychology and they're trying to help people with
+    depression.
 --- !u!222 &1765826860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12083,7 +12092,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: the town baker's husband
+  m_Text: a student
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -12251,10 +12260,8 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: I am the town baker's husband and I love eating pastries.   I tend to be
-    in very good spirits and enjoy selling delicious baked goods that my wife has
-    made.   My wife is great at baking but she is lousy at washing my clothes.  
-    They keep shrinking!
+  m_Text: A student studying for psychology and they're trying to help people with
+    depression.
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -12867,7 +12874,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: Brimswood pub, Tavern
+  m_Text: A park
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -13445,10 +13452,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I am the town baker's husband and I love eating pastries.  \r\nI tend
-    to be in very good spirits and enjoy selling delicious baked goods that my wife
-    has made.  \r\nMy wife is great at baking but she is lousy at washing my clothes. 
-    \r\nThey keep shrinking!"
+  m_Text: A student studying for psychology and they're trying to help people with
+    depression.
 --- !u!222 &2135127344
 CanvasRenderer:
   m_ObjectHideFlags: 0
