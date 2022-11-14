@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NPC
   m_EditorClassIdentifier: 
   Name: NPC
-  Persona: Hello traveller
+  Persona: This is a young girl with severe depression and autism and suicidal tendencies.
   temperature: 1
   topK: 1000
   numSampled: 3

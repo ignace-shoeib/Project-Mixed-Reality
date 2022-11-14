@@ -1,4 +1,0 @@
-model_type: "TransformerSemanticSimilarity"
-metric: "cosine"
-cache_size: 100
-pad_token_id: 0
