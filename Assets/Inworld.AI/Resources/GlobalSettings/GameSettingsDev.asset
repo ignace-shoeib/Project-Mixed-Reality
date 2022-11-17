@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b215506e631ea1e4889c6eed14cd3948, type: 3}
+  m_Name: GameSettingsDev
+  m_EditorClassIdentifier: 
+  currentServer: {fileID: 11400000, guid: f23addde8ca72db48917bf54131d7a86, type: 2}
+  currentWorkspace: {fileID: 11400000, guid: ea69438b8a28a8e40a0748c614bff857, type: 2}
+  currentScene: {fileID: 11400000, guid: e8cad8ebacc462943844087171d0dac9, type: 2}
+  currentKey: {fileID: 11400000, guid: 9b2d1ff373f23cd49a6464bbe5215598, type: 2}
+  anchorPosition: {x: -6, y: 0, z: 0}
+  offset: {x: 8, y: 0, z: 0}

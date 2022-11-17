@@ -46,7 +46,7 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-  m_StereoRenderingPath: 2
+  m_StereoRenderingPath: 1
   m_ActiveColorSpace: 1
   m_MTRendering: 1
   mipStripping: 0
@@ -698,7 +698,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: OCULUSINTEGRATION_PRESENT
+    Android: OCULUSINTEGRATION_PRESENT;INWORLD_DEBUG
     Standalone: OCULUSINTEGRATION_PRESENT
   additionalCompilerArguments: {}
   platformArchitecture: {}

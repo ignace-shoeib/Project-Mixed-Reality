@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label text="Please select Inworld Scenes and Characters:" display-tooltip-when-elided="true" name="ChooserTitle" style="height: 30px; font-size: 16px; -unity-text-align: lower-left; margin-left: 20px; margin-top: 20px; -unity-font-style: bold; flex-wrap: nowrap; white-space: normal;" />
+    <ui:DropdownField label="Inworld Scene" index="-1" choices="System.Collections.Generic.List`1[System.String]" name="SceneChooser" style="margin-top: 0; margin-left: 0; margin-right: 0; -unity-text-align: upper-left; font-size: 14px; -unity-font-style: bold; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 1px; margin-bottom: 0;" />
+    <ui:VisualElement name="Instruction">
+        <ui:Label text="Please click thumbnails to navigate to models, then drag them into the scene." display-tooltip-when-elided="true" style="margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 0; -unity-font-style: bold; font-size: 14px; white-space: normal;" />
+        <ui:Label text="NOTE: " display-tooltip-when-elided="true" style="margin-left: 20px; margin-right: 20px; margin-top: 20px; font-size: 14px; -unity-font-style: bold; color: rgb(255, 179, 0); white-space: normal;" />
+        <ui:Label text="All the &lt;color=yellow&gt;Inworld Characters&lt;/color&gt; that are not in your current &lt;color=yellow&gt;Inworld Scene&lt;/color&gt; would be deleted." display-tooltip-when-elided="true" style="margin-left: 20px; margin-right: 20px; margin-top: 0; font-size: 14px; -unity-font-style: normal; color: rgb(255, 255, 255); white-space: normal;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="CharacterChooser" style="flex-direction: row; flex-wrap: wrap; margin-left: 20px; margin-right: 20px; margin-top: 10px; margin-bottom: 10px;" />
+</ui:UXML>

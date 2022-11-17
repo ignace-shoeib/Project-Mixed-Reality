@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0447596b1a67de49ba5720fda0bdabe, type: 3}
+  m_Name: Olivia
+  m_EditorClassIdentifier: 
+  characterName: Olivia
+  brain: workspaces/default-0itekctycz_ccmis6tmk8g/characters/depressed_girl
+  avatar: {fileID: 0}
+  workspace: workspaces/default-0itekctycz_ccmis6tmk8g
+  currentScene: workspaces/default-0itekctycz_ccmis6tmk8g/characters/depressed_girl
+  ownerShip: 0
+  defaultThumbnail: {fileID: 0}
+  index: 0
+  triggers: []
+  scenes:
+  - workspaces/default-0itekctycz_ccmis6tmk8g/scenes/park
+  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/d16c3ab4-ea7a-486a-95f6-b1f11c6e4ddc.glb
+  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/d16c3ab4-ea7a-486a-95f6-b1f11c6e4ddc_posture.jpg
+  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/d16c3ab4-ea7a-486a-95f6-b1f11c6e4ddc_portrait.jpg
+  characterID: 

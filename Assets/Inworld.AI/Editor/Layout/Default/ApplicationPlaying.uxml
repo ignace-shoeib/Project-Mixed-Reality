@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label text="If you are using Inworld&apos;s Player Controller:&#10;&#10;Use &quot;WASD&quot; to move forward, back, left, or right.&#10;Use &quot;Q&quot; and &quot;E&quot; to move higher or lower.&#10;Click &quot;LMB&quot; to switch to rotation mode.&#10;Click &quot;~&quot; to switch to type mode." display-tooltip-when-elided="true" name="AppPlaying" style="margin-left: 20px; margin-right: 20px; margin-top: 60px; margin-bottom: 0; font-size: 16px; -unity-font-style: bold; white-space: normal; color: rgb(255, 218, 0); align-items: auto; -unity-text-align: upper-center;" />
+    <ui:VisualElement name="AppEditing" style="flex-direction: column; align-items: center;">
+        <ui:Label text="Data has been updated. Please Refresh.&#10;" display-tooltip-when-elided="true" style="margin-left: 20px; margin-right: 20px; font-size: 16px; -unity-font-style: bold; color: rgb(255, 218, 0);" />
+        <ui:Button text="Refresh" display-tooltip-when-elided="true" name="BtnRefresh" style="width: 100px; font-size: 16px; flex-direction: column; left: auto; margin-left: 20px; margin-right: 20px; flex-wrap: nowrap; align-items: flex-end;" />
+    </ui:VisualElement>
+</ui:UXML>
