@@ -46,5 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Controller: {fileID: 9100000, guid: 60e9fcbe60a6d424691cb4279d56ecc2, type: 2}
   m_Avatar: {fileID: 9000000, guid: ba5173a85368a4f4eb45fbc497be292c, type: 2}
-  m_LipAnimations: {fileID: 0}
+  m_LipAnimations: {fileID: 4039997440513057566, guid: 52b5f5deb90019c418c46d164c86e3cd,
+    type: 3}
   m_HeadAnimLoader: {fileID: 0}
