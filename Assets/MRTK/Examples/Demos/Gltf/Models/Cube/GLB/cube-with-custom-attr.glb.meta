@@ -1,21 +1,28 @@
 fileFormatVersion: 2
 guid: f0bb9fb635c69be4e8526b0fb6b48f39
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: main/glTF Scene cube-with-custom-attr
-    100002: main/glTF Scene cube-with-custom-attr/world
-    100004: main/glTF Scene cube-with-custom-attr/world/geometry_0
-    400000: main/glTF Scene cube-with-custom-attr/Transform
-    400002: main/glTF Scene cube-with-custom-attr/world/Transform
-    400004: main/glTF Scene cube-with-custom-attr/world/geometry_0/Transform
-    2300000: main/glTF Scene cube-with-custom-attr/world/geometry_0/MeshRenderer
-    2800000: Texture_0
-    3300000: main/glTF Scene cube-with-custom-attr/world/geometry_0/MeshFilter
-    4300000: geometry_0
-    11400000: glTF data
-    100100000: main
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 11500000, guid: 75911c45f303c8f45927f5efeaa50cc4, type: 3}
+  script: {fileID: 11500000, guid: 768a5a18fd6eb914f980bf85dd7b34ec, type: 3}
+  importSettings:
+    materials: 1
+    shaderOverrides:
+      metallic: {fileID: 4800000, guid: 057d08f5d01be134593d0fe0e40c1759, type: 3}
+      metallicBlend: {fileID: 4800000, guid: 7258d825fa9aac6439f21eb173b880c6, type: 3}
+      specular: {fileID: 4800000, guid: d28fc76bfd3057e4c8f1c6f0b91590c8, type: 3}
+      specularBlend: {fileID: 4800000, guid: 475158e3052e5c4488fa32f8df9d7be7, type: 3}
+    animationSettings:
+      looping: 0
+      frameRate: 24
+      interpolationMode: -1
+      compressBlendShapeKeyFrames: 1
+      useLegacyClips: 0
+    generateLightmapUVs: 0
+    hardAngle: 88
+    angleError: 8
+    areaError: 15
+    packMargin: 4

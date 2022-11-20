@@ -1,19 +1,28 @@
 fileFormatVersion: 2
 guid: 69c7e3c117890dc4eaf92659b4fa5348
 ScriptedImporter:
-  fileIDToRecycleName:
-    100000: main/glTF Scene Avocado
-    100002: main/glTF Scene Avocado/Avocado
-    400000: main/glTF Scene Avocado/Transform
-    400002: main/glTF Scene Avocado/Avocado/Transform
-    2100000: AvocadoMaterial
-    2300000: main/glTF Scene Avocado/Avocado/MeshRenderer
-    3300000: main/glTF Scene Avocado/Avocado/MeshFilter
-    4300000: Avocado
-    11400000: glTF data
-    100100000: main
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-  script: {fileID: 11500000, guid: 8f83316e73954ae4fa56b79705605b45, type: 3}
+  script: {fileID: 11500000, guid: 1fa4dafe23771ae498589f7f7c22c974, type: 3}
+  importSettings:
+    materials: 1
+    shaderOverrides:
+      metallic: {instanceID: 0}
+      metallicBlend: {instanceID: 0}
+      specular: {instanceID: 0}
+      specularBlend: {instanceID: 0}
+    animationSettings:
+      looping: 0
+      frameRate: 24
+      interpolationMode: -1
+      compressBlendShapeKeyFrames: 1
+      useLegacyClips: 0
+    generateLightmapUVs: 0
+    hardAngle: 88
+    angleError: 8
+    areaError: 15
+    packMargin: 4
