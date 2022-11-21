@@ -23,6 +23,12 @@ public class Mood : MonoBehaviour
 
     public void HandleEmotion(Inworld.Grpc.EmotionEvent.Types.SpaffCode spaffcode)
     {
+        switch (spaffcode)
+        {
+            case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Affection:
+                print("haha");
+                break;
+        }
         print(spaffcode.ToString());
     }
 }
