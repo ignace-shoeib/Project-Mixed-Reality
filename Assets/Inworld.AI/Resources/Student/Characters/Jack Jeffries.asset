@@ -23,7 +23,7 @@ MonoBehaviour:
   triggers: []
   scenes:
   - workspaces/mixed_reality/scenes/public_park
-  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/d0d8e6c2-cc85-42dc-ac9d-b939be72e83e.glb
-  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/d0d8e6c2-cc85-42dc-ac9d-b939be72e83e_posture.jpg
-  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/d0d8e6c2-cc85-42dc-ac9d-b939be72e83e_portrait.jpg
+  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/190ee394-adb4-4af8-a004-d13d3f6834d0.glb
+  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/190ee394-adb4-4af8-a004-d13d3f6834d0_posture.jpg
+  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/190ee394-adb4-4af8-a004-d13d3f6834d0_portrait.jpg
   characterID: 
