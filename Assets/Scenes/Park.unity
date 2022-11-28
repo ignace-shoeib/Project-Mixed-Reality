@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 6726892a820781840a2c9f23f3f6895d, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e391f00234292cc4f935308c11cf0e54, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1837513652}
-  m_IndirectSpecularColor: {r: 0.19652611, g: 0.18690276, b: 0.16439772, a: 1}
+  m_IndirectSpecularColor: {r: 0.051726386, g: 0.198633, b: 0.339884, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7154,7 +7154,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: df00b7f8033bc5d4baab438fa83205b0, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -15001,7 +15001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cbdb7877757d94d9322e178ed3af31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weatherController: {fileID: 1592058320}
+  WeatherController: {fileID: 1592058320}
+  MoodLevel: 0
 --- !u!4 &636098032
 Transform:
   m_ObjectHideFlags: 0
@@ -25593,18 +25594,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &942763812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942763802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fee76f5c3ca2d994abac24ddcc0ef49c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &954763335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35270,7 +35259,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 128870, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 481484, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: m_RootOrder
@@ -35311,11 +35300,23 @@ PrefabInstance:
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: lMoon
       value: 
-      objectReference: {fileID: 1837513652}
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
+      propertyPath: _bUseMoon
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
+      propertyPath: _iStartHour
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
       propertyPath: gWeatherMaster
       value: 
       objectReference: {fileID: 1284177116}
+    - target: {fileID: 11497762, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
+      propertyPath: _fSecondInAFullDay
+      value: 86400
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60db50946a122ca4084afb1bdbaf9317, type: 3}
 --- !u!1 &1496447426 stripped
@@ -36907,21 +36908,165 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUsingSound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fDayFadeTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fSoundVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _gSoundEffect
+      value: 
+      objectReference: {fileID: 1284177116}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fInitTimerEnd
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _adAmbientSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1d96dd107fc0a24da44c395a61eaf23, type: 3}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fSunriseFadeTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11429778, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fTimeToFadeSound
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fFadeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
       propertyPath: _gPartRain
       value: 
+      objectReference: {fileID: 467409814}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUsingSound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fSoundVolume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fInitTimerEnd
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _adAmbientSound
+      value: 
+      objectReference: {fileID: 8300000, guid: df00b7f8033bc5d4baab438fa83205b0, type: 3}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _adThunderSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ecffb4a2e1d1a044b98e661827d63457, type: 3}
+    - target: {fileID: 11430436, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fTimeToFadeSound
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 11439030, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
       propertyPath: gTimeOfDay
       value: 
       objectReference: {fileID: 1496447426}
+    - target: {fileID: 11439030, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: en_CurrWeather
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439030, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUseThunderstorm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439030, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUseRandomWeather
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439030, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUsingProceduralSkybox
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fFadeTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fFogAmount
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUsingSound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fSoundVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _gSoundEffect
+      value: 
+      objectReference: {fileID: 1284177116}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fInitTimerEnd
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _adAmbientSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e1d96dd107fc0a24da44c395a61eaf23, type: 3}
+    - target: {fileID: 11452910, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fTimeToFadeSound
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fFadeTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
       propertyPath: _gPartRain
       value: 
       objectReference: {fileID: 467409814}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _bUsingSound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fSoundVolume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fInitTimerEnd
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _adAmbientSound
+      value: 
+      objectReference: {fileID: 8300000, guid: df00b7f8033bc5d4baab438fa83205b0, type: 3}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fTimeToFadeSound
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11465078, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fDay_LightIntensity
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495374, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fFadeTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 11495374, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
       propertyPath: _gPartSnow
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11495374, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
+      propertyPath: _fInitTimerEnd
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7404eeab8d5e49489a17e15938e8ec1, type: 3}
@@ -36935,6 +37080,114 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a7174e887b3fd74b98ff4be38e1807b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1592058328
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284177116}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1592058329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284177116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96259031e225dd743951531ade5dff6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1604496222
@@ -41087,7 +41340,7 @@ GameObject:
   - component: {fileID: 1837513653}
   - component: {fileID: 1837513652}
   m_Layer: 9
-  m_Name: Directional Light
+  m_Name: sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41137,7 +41390,7 @@ Light:
       e33: 1
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 1
+  m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -41162,14 +41415,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837513651}
-  m_LocalRotation: {x: -0.12381268, y: -0.9677221, z: 0.21589328, w: 0.039679904}
+  m_LocalRotation: {x: 0.014920032, y: -0.97549564, z: 0.2080688, w: 0.06995007}
   m_LocalPosition: {x: 2018, y: 1745, z: -98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1774865877}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 24.081, y: -171.797, z: 16.334}
+  m_LocalEulerAnglesHint: {x: 24.081, y: -171.797, z: 0}
 --- !u!4 &1856282283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1810836374240881437, guid: 962996e23ffcbc44d92fb20cd03940cd,
