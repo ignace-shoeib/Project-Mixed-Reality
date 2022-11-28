@@ -62,12 +62,12 @@ public class Weather_Controller : MonoBehaviour
 
     public enum WeatherType
     {
-        RANDOM,
-        SUN,
+        SUN, // 0
+        RAIN, //1 
+        THUNDERSTORM, //2
         CLOUDY,
-        RAIN,
-        THUNDERSTORM,
         SNOW,
+        RANDOM,
         NUMBEROFWEATHERTYPES
     };
 
@@ -275,28 +275,28 @@ public class Weather_Controller : MonoBehaviour
         this.GetComponent<Weather_Cloudy>().GetSet_bUseInit = true;
     }
 
-    void ChangeWeatherToRain()
+    public void ChangeWeatherToRain()
     {
         en_CurrWeather = WeatherType.RAIN;
         this.GetComponent<Weather_Rain>().enabled = true;
         this.GetComponent<Weather_Rain>().GetSet_bUseInit = true;
     }
 
-    void ChangeWeatherToThunderstorm()
+    public void ChangeWeatherToThunderstorm()
     {
         en_CurrWeather = WeatherType.THUNDERSTORM;
         this.GetComponent<Weather_Thunderstorm>().enabled = true;
         this.GetComponent<Weather_Thunderstorm>().GetSet_bUseInit = true;
     }
 
-    void ChangeWeatherToSnow()
+    public void ChangeWeatherToSnow()
     {
         en_CurrWeather = WeatherType.SNOW;
         this.GetComponent<Weather_Snow>().enabled = true;
         this.GetComponent<Weather_Snow>().GetSet_bUseInit = true;
     }
 
-    void ExitCurrentWeather(int NewWeatherType)
+    public void ExitCurrentWeather(int NewWeatherType)
     {
         if (en_CurrWeather == WeatherType.RANDOM)
         {

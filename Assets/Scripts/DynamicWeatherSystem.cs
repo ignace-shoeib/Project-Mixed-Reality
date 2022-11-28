@@ -76,6 +76,8 @@ public class DynamicWeatherSystem : MonoBehaviour
 
     void selectWeather()
     {
+        
+        // hier emoties
         switchWeather = Random.Range(0, System.Enum.GetValues(typeof(WeatherData)).Length);
         resetWeather();
         if (switchWeather == 0)
