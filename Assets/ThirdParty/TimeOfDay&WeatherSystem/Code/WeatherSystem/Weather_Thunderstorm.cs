@@ -238,9 +238,11 @@ public class Weather_Thunderstorm : Weather_Base
         // We turn on emission on the particle system as we always turn it off in the end
         if (_gPartRain != null)
             _gPartRain.GetComponent<ParticleSystem>().enableEmission = true;
+        if (_bUsingSound)
+	        TurnOnSound(_gPartRain);
 
-        // Create the lighting component and components needs for it
-        _gLighting = new GameObject("ThunderLighting");
+		// Create the lighting component and components needs for it
+		_gLighting = new GameObject("ThunderLighting");
         _gLighting.AddComponent<Light>();
         _gLighting.AddComponent<AudioSource>();
 

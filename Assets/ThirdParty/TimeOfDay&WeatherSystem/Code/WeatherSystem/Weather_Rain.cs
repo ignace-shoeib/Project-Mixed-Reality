@@ -70,10 +70,12 @@ public class Weather_Rain : Weather_Base
         base.Init();
         TurnOnRain();
 
-        // We turn on emission on the particle system as we always turn it off in the end
-        if (_gPartRain != null)
+		// We turn on emission on the particle system as we always turn it off in the end
+		if (_gPartRain != null)
             _gPartRain.GetComponent<ParticleSystem>().enableEmission = true;
-    }
+		if (_bUsingSound)
+			TurnOnSound(_gPartRain);
+	}
 
     private void Update()
     {
