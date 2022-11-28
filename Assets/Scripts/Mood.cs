@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Inworld;
 using Inworld.Packets;
 using UnityEngine;
@@ -7,6 +5,12 @@ public class Mood : MonoBehaviour
 {
     public Weather_Controller WeatherController;
     public int MoodLevel = 0;
+    public const int ThunderMood = -30;
+    public const int RainMood = -15;
+    public const int CloudyMood = 0;
+    public const int SunMood = 15;
+    public const int MaxMood = 30;
+    public const int MinMood = -45;
     private Weather_Controller.WeatherType desiredWeather;
     
     void Start()
@@ -31,32 +35,41 @@ public class Mood : MonoBehaviour
         switch (spaffcode)
         {
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Sadness:
-	            MoodLevel--;
+				if (MoodLevel > MinMood)
+					MoodLevel--;
                 break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Anger:
-	            MoodLevel--;
-                break;
+				if (MoodLevel > MinMood)
+					MoodLevel--;
+				break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Affection:
-	            MoodLevel++;
+				if (MoodLevel < MaxMood)
+					MoodLevel++;
 	            break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Joy:
-	            MoodLevel++;
+				if (MoodLevel < MaxMood)
+					MoodLevel++;
 	            break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Humor:
-	            MoodLevel++;
+				if (MoodLevel < MaxMood)
+					MoodLevel++;
 	            break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Interest:
-	            MoodLevel++;
-	            break;
+				if (MoodLevel < MaxMood)
+					MoodLevel++;
+				break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Disgust:
-	            MoodLevel--;
-	            break;
+				if (MoodLevel > MinMood)
+					MoodLevel--;
+				break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Tension:
-	            MoodLevel--;
-	            break;
+				if (MoodLevel > MinMood)
+					MoodLevel--;
+				break;
             case Inworld.Grpc.EmotionEvent.Types.SpaffCode.Belligerence:
-	            MoodLevel--;
-	            break;
+				if (MoodLevel > MinMood)
+					MoodLevel--;
+				break;
 		}
     }
 
@@ -64,16 +77,16 @@ public class Mood : MonoBehaviour
     {
 	    switch (MoodLevel)
 	    {
-		    case <= -30:
+		    case <= ThunderMood:
 				desiredWeather = Weather_Controller.WeatherType.THUNDERSTORM;
 				break;
-		    case <= -15:
+		    case <= RainMood:
 				desiredWeather = Weather_Controller.WeatherType.RAIN;
 				break;
-		    case <= 0:
+		    case <= CloudyMood:
 				desiredWeather = Weather_Controller.WeatherType.CLOUDY;
 				break;
-		    case >= 15:
+		    case >= SunMood:
 				desiredWeather = Weather_Controller.WeatherType.SUN;
 				break;
 	    }
