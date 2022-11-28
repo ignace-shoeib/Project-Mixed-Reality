@@ -20,7 +20,7 @@ public class DynamicWeatherSystem : MonoBehaviour
     public Transform windzone;
 
     public weatherState weatherState;
-    [SerializeField]
+
     public WeatherData[] weatherData;
 
     public void Awake()

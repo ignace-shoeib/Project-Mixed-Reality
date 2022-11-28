@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[System.Serializable]
 public struct WeatherData
 {
     public string name;
@@ -20,11 +20,4 @@ public struct WeatherData
 
     public Color fogColor;
     public Color currentForCollor;
-
-
-
-
-
-
-
 }

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: d9dca9ae1786c394f9e79c637aa9a7bf, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2d8a1068ff1874841aee10630ea5bac8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1837513652}
-  m_IndirectSpecularColor: {r: 0.18254054, g: 0.228253, b: 0.30721548, a: 1}
+  m_IndirectSpecularColor: {r: 0.2701479, g: 0.3876087, b: 0.4732054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15747,51 +15747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee76f5c3ca2d994abac24ddcc0ef49c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CloudsMask:
-    serializedVersion: 2
-    m_Bits: 256
-  LightMask:
-    serializedVersion: 2
-    m_Bits: 0
-  WorldBlockingMask:
-    serializedVersion: 2
-    m_Bits: 567
-  ResolutionDivider: 2
-  WorldDepthResolutionDivider: 2
-  DepthPrecision: 10
-  LateCut: 1
-  BlurRadius: 6.7
-  BlurQuality: 5
-  LateCutThreshohld: 0.115
-  LateCutPower: 1
-  UseDepthFiltering: 0
-  DepthFilteringPower: 0
-  UseNoise: 1
-  Noise: {fileID: 2800000, guid: ea4ad7e4f21a143478fefc813c9174ab, type: 3}
-  Wind: {x: 0.1, y: 0.1, z: 0.1}
-  NoiseScale: 3.35
-  DepthNoiseScale: 6.68
-  NormalNoisePower: 2.58
-  DepthNoisePower: 0.81
-  DisplacementNoisePower: 1.41
-  NoiseSinTimeScale: 0.015
-  DistanceToClouds: 30
-  Light: {fileID: 1837513653}
-  UseRamp: 1
-  Ramp: {fileID: 2800000, guid: 79fc49341c0fd58439c6651b208e6370, type: 3}
-  LightColor: {r: 1, g: 0.9756336, b: 0.7971698, a: 1}
-  ShadowColor: {r: 0.60110295, g: 0.6904412, b: 0.75, a: 1}
-  LightEnd: 0.664
-  HaloPower: 0.61
-  HaloDistance: 0.528
-  FallbackDistance: 1.22
-  blurFastShader: {fileID: 4800000, guid: 7ab901123de490e4bad21fdb835edd20, type: 3}
-  blurShader: {fileID: 4800000, guid: fd4453f270eb2734b886efe5223588ce, type: 3}
-  blurHQShader: {fileID: 4800000, guid: 22d75b161fbf2d14b9cd656fde6d05bd, type: 3}
-  depthBlurShader: {fileID: 4800000, guid: 86ffe5743a2c74741be2ae7d00c19d9b, type: 3}
-  depthShader: {fileID: 4800000, guid: 009f6c8cf8d3c144792d6321909e830c, type: 3}
-  cloudShader: {fileID: 4800000, guid: ddd68a53b8f487941ac09b4480974963, type: 3}
-  clearColorShader: {fileID: 4800000, guid: e8f3ce2cbe4971147b1b7f04b791e52a, type: 3}
 --- !u!1001 &954763335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23682,6 +23637,37 @@ MonoBehaviour:
   sunLight: {fileID: 0}
   windzone: {fileID: 0}
   weatherState: 0
+  weatherData:
+  - name: 
+    ParticleSystem: {fileID: 0}
+    useAudio: 0
+    weatherAudio: {fileID: 0}
+    audioFadeTimer: 0
+    lightIntencity: 0
+    lightDimTimer: 0
+    fogChangeSpeed: 0
+    fogColor: {r: 0, g: 0, b: 0, a: 0}
+    currentForCollor: {r: 0, g: 0, b: 0, a: 0}
+  - name: 
+    ParticleSystem: {fileID: 0}
+    useAudio: 0
+    weatherAudio: {fileID: 0}
+    audioFadeTimer: 0
+    lightIntencity: 0
+    lightDimTimer: 0
+    fogChangeSpeed: 0
+    fogColor: {r: 0, g: 0, b: 0, a: 0}
+    currentForCollor: {r: 0, g: 0, b: 0, a: 0}
+  - name: 
+    ParticleSystem: {fileID: 0}
+    useAudio: 0
+    weatherAudio: {fileID: 0}
+    audioFadeTimer: 0
+    lightIntencity: 0
+    lightDimTimer: 0
+    fogChangeSpeed: 0
+    fogColor: {r: 0, g: 0, b: 0, a: 0}
+    currentForCollor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &1392358189
 Transform:
   m_ObjectHideFlags: 0
