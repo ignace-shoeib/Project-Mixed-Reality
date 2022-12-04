@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0447596b1a67de49ba5720fda0bdabe, type: 3}
+  m_Name: Olivia Swanson
+  m_EditorClassIdentifier: 
+  characterName: Olivia Swanson
+  brain: workspaces/mixed_reality_v3/characters/olivia_swanson
+  avatar: {fileID: 0}
+  workspace: workspaces/mixed_reality_v3
+  currentScene: workspaces/mixed_reality_v3/characters/olivia_swanson
+  ownerShip: 0
+  defaultThumbnail: {fileID: 0}
+  index: 0
+  triggers: []
+  scenes:
+  - workspaces/mixed_reality_v3/scenes/public_park
+  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/3f0c6079-b290-4d47-b3ff-6425480c9999.glb
+  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/3f0c6079-b290-4d47-b3ff-6425480c9999_posture.jpg
+  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/3f0c6079-b290-4d47-b3ff-6425480c9999_portrait.jpg
+  characterID: 

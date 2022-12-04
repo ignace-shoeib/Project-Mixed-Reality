@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3ad0515a2868cd4282589144c7820fd, type: 3}
-  m_Name: public park
+  m_Name: Public Park
   m_EditorClassIdentifier: 
-  fullName: workspaces/mixed_reality/scenes/public_park
-  shortName: public park
-  description: 'Nice windy park. It is beautiful and relaxing. Perfect to calm down
+  fullName: workspaces/mixed_reality_v3/scenes/public_park
+  shortName: Public Park
+  description: Nice windy park. It is beautiful and relaxing. Perfect to calm down
     and get your mind off of things. It is full of chirping birds and impressive
     scenery to look at. It feels like a comforting place to get your thoughts together
-    and open up. '
+    and open up.
   characters:
-  - workspaces/mixed_reality/characters/jack
+  - workspaces/mixed_reality_v3/characters/jack_jeffries
+  - workspaces/mixed_reality_v3/characters/olivia_swanson
   triggers: []
   index: 0
