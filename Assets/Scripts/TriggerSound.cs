@@ -9,19 +9,14 @@ public class TriggerSound : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-       print(other.tag);
         if (audioPlayed == false)
         {
             if (other.CompareTag("MainCamera")) 
             {
+                audioPlayed = true;
                 AudioSource audio = GetComponent<AudioSource>();
                 audio.Play();
             }
-            
-          
         }
-
-
-
     }
 }
