@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class TriggerSound : MonoBehaviour
 {
-    public bool audioPlayed = false;
+	public AudioClip AudioClip;
+	private bool audioPlayed = false;
     
     private void OnTriggerEnter(Collider other)
     {
@@ -14,8 +15,9 @@ public class TriggerSound : MonoBehaviour
             if (other.CompareTag("MainCamera")) 
             {
                 audioPlayed = true;
-                AudioSource audio = GetComponent<AudioSource>();
-                audio.Play();
+                AudioSource audio = other.GetComponent<AudioSource>();
+				audio.clip = AudioClip;
+				audio.Play();
             }
         }
     }
