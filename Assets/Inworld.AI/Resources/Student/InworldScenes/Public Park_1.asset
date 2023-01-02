@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3ad0515a2868cd4282589144c7820fd, type: 3}
+  m_Name: Public Park_1
+  m_EditorClassIdentifier: 
+  fullName: workspaces/mixed_reality_v4/scenes/public_park
+  shortName: Public Park
+  description: Nice windy park. It is beautiful and relaxing. Perfect to calm down
+    and get your mind off of things. It is full of chirping birds and impressive
+    scenery to look at. It feels like a comforting place to get your thoughts together
+    and open up. Here people meetup to have a conversation about their personal issues
+    and problems. People tend to be more open about their personal issues in this
+    environment.
+  characters:
+  - workspaces/mixed_reality_v4/characters/jack_jeffries
+  - workspaces/mixed_reality_v4/characters/olivia_swanson
+  triggers: []
+  index: 1

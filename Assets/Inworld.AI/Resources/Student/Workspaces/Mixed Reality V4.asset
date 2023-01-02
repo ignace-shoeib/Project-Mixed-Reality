@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679553faa086cdc48a58556300e27230, type: 3}
+  m_Name: Mixed Reality V4
+  m_EditorClassIdentifier: 
+  title: Mixed Reality V4
+  fullName: workspaces/mixed_reality_v4
+  characters:
+  - {fileID: 11400000, guid: 32826c16861610042a44df350d4d23ac, type: 2}
+  - {fileID: 11400000, guid: 680181f3d6c3cd44c82b487abf165d69, type: 2}
+  scenes:
+  - {fileID: 11400000, guid: 13d9825c312b0a64c825c84bdfb50795, type: 2}
+  integrations:
+  - {fileID: 11400000, guid: a93a1bfbe7d3f934283ca19b2cbb4d60, type: 2}
+  index: 0

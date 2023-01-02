@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Jack Jeffries_1
   m_EditorClassIdentifier: 
   characterName: Jack Jeffries
-  brain: workspaces/mixed_reality_v3/characters/jack_jeffries
+  brain: workspaces/mixed_reality_v4/characters/jack_jeffries
   avatar: {fileID: 0}
-  workspace: workspaces/mixed_reality_v3
-  currentScene: workspaces/mixed_reality_v3/characters/jack_jeffries
+  workspace: workspaces/mixed_reality_v4
+  currentScene: workspaces/mixed_reality_v4/characters/jack_jeffries
   ownerShip: 0
   defaultThumbnail: {fileID: 0}
   index: 1
   triggers: []
   scenes:
-  - workspaces/mixed_reality_v3/scenes/public_park
-  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/6989a4b1-b8a8-40c5-ab5d-f449120b10a7.glb
-  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/6989a4b1-b8a8-40c5-ab5d-f449120b10a7_posture.jpg
-  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/6989a4b1-b8a8-40c5-ab5d-f449120b10a7_portrait.jpg
+  - workspaces/mixed_reality_v4/scenes/public_park
+  modelUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_model/e2b18be7-c5ba-4c5d-a051-7ea208cb2560.glb
+  posUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/e2b18be7-c5ba-4c5d-a051-7ea208cb2560_posture.jpg
+  previewImgUri: https://storage.googleapis.com/inworld-ai-usercontent-prod/rpm_image/e2b18be7-c5ba-4c5d-a051-7ea208cb2560_portrait.jpg
   characterID: 
