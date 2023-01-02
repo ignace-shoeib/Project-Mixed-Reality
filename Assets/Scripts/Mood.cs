@@ -5,12 +5,13 @@ public class Mood : MonoBehaviour
 {
     public Weather_Controller WeatherController;
     public int MoodLevel = 0;
-    public const int ThunderMood = -30;
-    public const int RainMood = -15;
+    public AudioSource AudioSource;
+	public const int ThunderMood = -10;
+    public const int RainMood = -5;
     public const int CloudyMood = 0;
-    public const int SunMood = 15;
-    public const int MaxMood = 30;
-    public const int MinMood = -45;
+    public const int SunMood = 5;
+    public const int MaxMood = 10;
+    public const int MinMood = -15;
     private Weather_Controller.WeatherType desiredWeather;
     
     void Start()
@@ -21,7 +22,8 @@ public class Mood : MonoBehaviour
 
     void OnPacketEvents(InworldPacket packet)
     {
-        switch (packet)
+		AudioSource.enabled = false;
+		switch (packet)
         {
             case EmotionEvent emotionEvent:
                 HandleEmotion(emotionEvent.SpaffCode);

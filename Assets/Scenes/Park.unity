@@ -15358,6 +15358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeatherController: {fileID: 1592058320}
   MoodLevel: 0
+  AudioSource: {fileID: 942763815}
 --- !u!4 &636098032
 Transform:
   m_ObjectHideFlags: 0
