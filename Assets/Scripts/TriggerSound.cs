@@ -16,6 +16,7 @@ public class TriggerSound : MonoBehaviour
             {
                 audioPlayed = true;
                 AudioSource audio = other.GetComponent<AudioSource>();
+				audio.enabled = true;
 				audio.clip = AudioClip;
 				audio.Play();
             }
